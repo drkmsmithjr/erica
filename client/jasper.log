@@ -1,0 +1,1178 @@
+2014-04-15 08:40:55,817 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Birthday.py", line 19, in handle
+    oauth_access_token = profile['keys']["FB_TOKEN"]
+KeyError: 'keys'
+2014-04-15 08:43:40,355 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 106, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 257, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-15 08:43:40,355 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 106, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 257, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-20 02:44:17,522 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+TypeError: handle() takes exactly 1 argument (3 given)
+2014-04-20 15:51:42,439 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Notifications.py", line 19, in handle
+    oauth_access_token = profile['keys']['FB_TOKEN']
+KeyError: 'keys'
+2014-04-20 18:21:07,806 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 299, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 64, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-20 18:21:07,806 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 299, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 64, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-20 22:43:17,667 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Birthday.py", line 19, in handle
+    oauth_access_token = profile['keys']["FB_TOKEN"]
+KeyError: 'keys'
+2014-04-20 23:36:21,431 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 64, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-20 23:38:30,462 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 64, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-20 23:38:30,462 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 64, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-20 23:42:25,517 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 65, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-20 23:45:37,532 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 66, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2013'
+2014-04-21 01:00:46,140 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 67, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 01:07:35,980 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 67, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u201c'
+2014-04-21 01:19:56,664 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 67, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 01:25:23,484 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 67, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 01:33:40,572 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 68, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 01:39:51,524 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 69, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 01:53:22,124 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 70, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 02:31:59,495 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u201c'
+2014-04-21 02:42:58,601 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 73, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u201c'
+2014-04-21 03:29:33,437 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 41, in GoogleTTS
+    print(urllib.quote(text))
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u201c'
+2014-04-21 04:21:29,438 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 75, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 04:26:52,112 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 75, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2013'
+2014-04-21 04:32:39,351 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 75, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-21 04:47:13,757 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 76, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2013'
+2014-04-21 05:44:45,493 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 129, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 243, in activeListen
+    THRESHOLD = self.fetchThreshold()
+  File "/home/pi/jasper/client/mic.py", line 112, in fetchThreshold
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-21 06:26:39,708 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-22 07:39:33,895 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 105, in handle
+    ". Would you like me to send you these articles? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\xbd'
+2014-04-22 07:44:25,084 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 105, in handle
+    ". Would you like me to send you these articles? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote_plus(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1273, in quote_plus
+    s = quote(s, safe + ' ')
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\xbd'
+2014-04-22 07:44:51,538 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 105, in handle
+    ". Would you like me to send you these articles? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote_plus(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1273, in quote_plus
+    s = quote(s, safe + ' ')
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\xbd'
+2014-04-22 07:44:51,538 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 105, in handle
+    ". Would you like me to send you these articles? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote_plus(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1273, in quote_plus
+    s = quote(s, safe + ' ')
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\xbd'
+2014-04-22 07:55:55,994 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/News.py", line 106, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 262, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-22 08:20:29,059 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 112, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 84, in handleResponse
+    for idx, article in enumerate(stories):
+NameError: global name 'stories' is not defined
+2014-04-22 14:16:57,283 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 112, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 84, in handleResponse
+    for idx, article in enumerate(healthreports):
+NameError: global name 'stories' is not defined
+2014-04-22 14:16:57,283 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 112, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 84, in handleResponse
+    for idx, article in enumerate(healthreports):
+NameError: global name 'stories' is not defined
+2014-04-23 02:32:45,535 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 112, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 84, in handleResponse
+    for idx, article in enumerate(healthreports):
+NameError: global name 'stories' is not defined
+2014-04-23 02:32:45,535 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 112, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 84, in handleResponse
+    for idx, article in enumerate(healthreports):
+NameError: global name 'stories' is not defined
+2014-04-23 02:32:45,535 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 112, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 84, in handleResponse
+    for idx, article in enumerate(healthreports):
+NameError: global name 'stories' is not defined
+2014-04-23 03:50:53,643 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote_plus(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1273, in quote_plus
+    s = quote(s, safe + ' ')
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2019'
+2014-04-23 05:12:52,832 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 128, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 303, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 71, in GoogleTTS
+    mp3url = "http://translate.google.com/translate_tts?tl=en&q=%s&total=%s&idx=%s" % (urllib.quote_plus(val), len(combined_text), idx)
+  File "/usr/lib/python2.7/urllib.py", line 1273, in quote_plus
+    s = quote(s, safe + ' ')
+  File "/usr/lib/python2.7/urllib.py", line 1268, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u2013'
+2014-04-23 05:51:11,330 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 52, in handle
+    if MAXNEWS >= len(healthreports):
+UnboundLocalError: local variable 'MAXNEWS' referenced before assignment
+2014-04-23 05:54:46,479 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 57, in handle
+    x = randint(0,len(copyreports))
+NameError: global name 'randint' is not defined
+2014-04-23 06:37:02,861 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Birthday.py", line 19, in handle
+    oauth_access_token = profile['keys']["FB_TOKEN"]
+KeyError: 'keys'
+2014-04-26 23:06:26,821 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 52, in handle
+    mic.say("Pulling up the surf reports")
+  File "/home/pi/jasper/client/mic.py", line 324, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 80, in GoogleTTS
+    response = urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 401, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 419, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 379, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1211, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1181, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2014-04-27 06:30:55,578 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Repeat.py", line 48, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 280, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-27 07:13:39,554 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Healthfeed.py", line 119, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 280, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-27 15:51:16,008 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Repeat.py", line 48, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 280, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-27 15:54:03,689 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Repeat.py", line 48, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 280, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-04-27 15:54:03,689 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Repeat.py", line 48, in handle
+    handleResponse(mic.activeListen())
+  File "/home/pi/jasper/client/mic.py", line 280, in activeListen
+    data = stream.read(CHUNK)
+  File "/usr/lib/pymodules/python2.7/pyaudio.py", line 564, in read
+    return pa.read_stream(self._stream, num_frames)
+IOError: [Errno Input overflowed] -9981
+2014-05-14 06:19:23,900 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 67, in handle
+    surfreports = getSurfReports(SpecificSpot)
+NameError: global name 'SpecificSpot' is not defined
+2014-05-14 14:41:29,914 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 72, in handle
+    surfreports = getSurfReports(specificSpot)
+UnboundLocalError: local variable 'specificSpot' referenced before assignment
+2014-05-15 01:44:22,407 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Unclear.py", line 22, in handle
+    mic.say(message)
+  File "/home/pi/jasper/client/mic.py", line 333, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 77, in GoogleTTS
+    sys.stdout.flush()
+IOError: [Errno 5] Input/output error
+2014-05-15 01:44:22,407 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Unclear.py", line 22, in handle
+    mic.say(message)
+  File "/home/pi/jasper/client/mic.py", line 333, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 77, in GoogleTTS
+    sys.stdout.flush()
+IOError: [Errno 5] Input/output error
+2014-05-15 02:30:42,854 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 72, in handle
+    surfreports = getSurfReports(specificSpot)
+UnboundLocalError: local variable 'specificSpot' referenced before assignment
+2014-05-15 02:43:54,893 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 72, in handle
+    surfreports = getSurfReports(specificSpot)
+UnboundLocalError: local variable 'specificSpot' referenced before assignment
+2014-05-15 02:55:39,489 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 73, in handle
+    surfreports = getSurfReports(specificSpot)
+UnboundLocalError: local variable 'specificSpot' referenced before assignment
+2014-05-15 03:53:55,779 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 77, in handle
+    surfreports = getSurfReports(specificSpot)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 46, in getSurfReports
+    d = feedparser.parse(URL[x])
+TypeError: list indices must be integers, not str
+                                                                                                                                                                                                               2014-05-18 07:08:12,220 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 46, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaResponse.py", line 13, in handle
+    x = randint(0,len(saying)-1)
+NameError: global name 'randint' is not defined
+2014-05-18 07:29:35,126 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaResponse.py", line 13, in handle
+    x = randint(0,len(saying)-1)
+NameError: global name 'randint' is not defined
+2014-05-18 07:32:34,342 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaResponse.py", line 11, in handle
+    styleSaying = random.choice(sayings)
+NameError: global name 'random' is not defined
+2014-05-19 22:22:24,236 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaResponse.py", line 13, in handle
+    mic.say(styleSaying)
+  File "/home/pi/jasper/client/mic.py", line 333, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 77, in GoogleTTS
+    sys.stdout.flush()
+IOError: [Errno 5] Input/output error
+2014-07-16 04:17:12,085 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Time.py", line 24, in handle
+    mic.say("It is %s right now." % response)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 77, in GoogleTTS
+    sys.stdout.flush()
+IOError: [Errno 5] Input/output error
+2014-07-26 14:54:55,324 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaResponse.py", line 13, in handle
+    mic.say(styleSaying)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 80, in GoogleTTS
+    response = urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 401, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 419, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 379, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1211, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1181, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2014-08-01 16:56:07,390 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 17:22:08,354 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 17:22:08,354 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 18:43:10,374 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 18:43:10,374 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 18:43:10,374 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:38:01,185 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:38:01,185 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:38:01,185 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:38:01,185 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:39:47,683 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:39:47,683 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:39:47,683 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:39:47,683 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:39:47,683 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:40:12,415 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:40:12,415 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:40:12,415 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:40:12,415 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:40:12,415 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-01 19:40:12,415 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-13 15:47:37,314 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaResponse.py", line 13, in handle
+    mic.say(styleSaying)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 77, in GoogleTTS
+    sys.stdout.flush()
+IOError: [Errno 5] Input/output error
+2014-08-18 23:43:01,661 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-08-21 01:21:07,973 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Time.py", line 24, in handle
+    mic.say("It is %s right now." % response)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 80, in GoogleTTS
+    response = urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 401, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 419, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 379, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1211, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1181, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2014-08-21 01:21:07,973 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Time.py", line 24, in handle
+    mic.say("It is %s right now." % response)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 80, in GoogleTTS
+    response = urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 401, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 419, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 379, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1211, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1181, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2014-08-22 14:28:46,861 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Time.py", line 24, in handle
+    mic.say("It is %s right now." % response)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 80, in GoogleTTS
+    response = urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 401, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 419, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 379, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1211, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1181, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2014-08-25 14:33:32,223 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Time.py", line 24, in handle
+    mic.say("It is %s right now." % response)
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 80, in GoogleTTS
+    response = urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 401, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 419, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 379, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 1211, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1181, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2014-08-29 14:11:45,836 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-12 01:50:21,033 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-12 02:31:51,888 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-12 02:31:51,888 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-21 18:24:46,012 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 47, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/Birthday.py", line 19, in handle
+    oauth_access_token = profile['keys']["FB_TOKEN"]
+KeyError: 'keys'
+2014-09-21 18:53:24,169 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 47, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 129, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 44, in GoogleTTS
+    print(text)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 133: ordinal not in range(128)
+2014-09-21 18:53:24,169 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 47, in query
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/HN.py", line 129, in handle
+    all_titles + ". Would you like me to send you these? If so, which?")
+  File "/home/pi/jasper/client/mic.py", line 338, in say
+    GoogleTTSFork.GoogleTTS(phrase,outfile)
+  File "/home/pi/jasper/client/GoogleTTSFork.py", line 44, in GoogleTTS
+    print(text)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 133: ordinal not in range(128)
+2014-09-24 00:33:08,152 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 00:33:08,152 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 00:33:08,152 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 02:37:54,738 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 02:37:54,738 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 02:37:54,738 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 02:37:54,738 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:09:28,964 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:09:28,964 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:09:28,964 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:09:28,964 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:09:28,964 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:55:12,909 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:55:12,909 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:55:12,909 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:55:12,909 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:55:12,909 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+2014-09-24 04:55:12,909 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 2014-09-24 14:42:50,659 ERROR Failed to execute module
+Traceback (most recent call last):
+  File "/home/pi/jasper/client/brain.py", line 66, in passivequery
+    module.handle(text, self.mic, self.profile)
+  File "/home/pi/jasper/client/modules/EricaSurf.py", line 84, in handle
+    reports = "I could not find the report for " + specificSpot + " . "
+TypeError: cannot concatenate 'str' and 'NoneType' objects

@@ -1,0 +1,176 @@
+Language model created by QuickLM on Sun Aug 10 11:52:31 EDT 2014
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 37 sentences and 39 words
+
+\data\
+ngram 1=39
+ngram 2=74
+ngram 3=40
+
+\1-grams:
+-0.7897 </s> -0.3010
+-0.7897 <s> -0.2218
+-2.3579 AGAIN -0.2241
+-2.0569 BE -0.2218
+-2.3579 BEING -0.2241
+-2.3579 BUT -0.2241
+-2.3579 DID -0.2241
+-2.3579 ENERGY -0.2241
+-2.3579 ERICA -0.2241
+-2.3579 FIRST -0.2241
+-2.3579 HACKER -0.2241
+-2.3579 HELLO -0.2241
+-2.3579 HI -0.2241
+-2.3579 IN -0.2241
+-2.3579 IS -0.2241
+-2.3579 IT -0.2241
+-2.3579 JASPER -0.2241
+-2.3579 MUSIC -0.2241
+-2.3579 NEWS -0.2241
+-2.3579 NOW -0.2241
+-2.3579 OF -0.2241
+-2.3579 OFF -0.2241
+-2.3579 ON -0.2241
+-2.3579 QUIET -0.2241
+-2.3579 REPEAT -0.2241
+-2.3579 RIGHT -0.2241
+-2.3579 SAY -0.2241
+-2.0569 SET -0.2196
+-2.3579 SHUT -0.2991
+-2.3579 SURF -0.2241
+-2.3579 TEMPERATURE -0.2241
+-2.3579 TIME -0.2241
+-2.0569 TIMER -0.2241
+-2.3579 UP -0.2241
+-2.3579 WEATHER -0.2241
+-2.3579 WHAT -0.2241
+-2.3579 WHICH -0.2241
+-2.3579 WITH -0.2241
+-2.3579 WORK -0.2241
+
+\2-grams:
+-1.8692 <s> AGAIN 0.0000
+-1.5682 <s> BE 0.0000
+-1.8692 <s> BEING 0.0000
+-1.8692 <s> BUT 0.0000
+-1.8692 <s> DID 0.0000
+-1.8692 <s> ENERGY 0.0000
+-1.8692 <s> ERICA 0.0000
+-1.8692 <s> FIRST 0.0000
+-1.8692 <s> HACKER 0.0000
+-1.8692 <s> HELLO 0.0000
+-1.8692 <s> HI 0.0000
+-1.8692 <s> IN 0.0000
+-1.8692 <s> IS 0.0000
+-1.8692 <s> IT 0.0000
+-1.8692 <s> JASPER 0.0000
+-1.8692 <s> MUSIC 0.0000
+-1.8692 <s> NEWS 0.0000
+-1.8692 <s> NOW 0.0000
+-1.8692 <s> OF 0.0000
+-1.8692 <s> OFF 0.0000
+-1.8692 <s> ON 0.0000
+-1.8692 <s> REPEAT 0.0000
+-1.8692 <s> RIGHT 0.0000
+-1.8692 <s> SAY 0.0000
+-1.5682 <s> SET 0.0000
+-1.8692 <s> SHUT 0.0000
+-1.8692 <s> SURF 0.0000
+-1.8692 <s> TEMPERATURE 0.0000
+-1.8692 <s> TIME 0.0000
+-1.8692 <s> TIMER 0.0000
+-1.8692 <s> WEATHER 0.0000
+-1.8692 <s> WHAT 0.0000
+-1.8692 <s> WHICH 0.0000
+-1.8692 <s> WITH 0.0000
+-1.8692 <s> WORK 0.0000
+-0.3010 AGAIN </s> -0.3010
+-0.6021 BE </s> -0.3010
+-0.6021 BE QUIET 0.0000
+-0.3010 BEING </s> -0.3010
+-0.3010 BUT </s> -0.3010
+-0.3010 DID </s> -0.3010
+-0.3010 ENERGY </s> -0.3010
+-0.3010 ERICA </s> -0.3010
+-0.3010 FIRST </s> -0.3010
+-0.3010 HACKER </s> -0.3010
+-0.3010 HELLO </s> -0.3010
+-0.3010 HI </s> -0.3010
+-0.3010 IN </s> -0.3010
+-0.3010 IS </s> -0.3010
+-0.3010 IT </s> -0.3010
+-0.3010 JASPER </s> -0.3010
+-0.3010 MUSIC </s> -0.3010
+-0.3010 NEWS </s> -0.3010
+-0.3010 NOW </s> -0.3010
+-0.3010 OF </s> -0.3010
+-0.3010 OFF </s> -0.3010
+-0.3010 ON </s> -0.3010
+-0.3010 QUIET </s> -0.3010
+-0.3010 REPEAT </s> -0.3010
+-0.3010 RIGHT </s> -0.3010
+-0.3010 SAY </s> -0.3010
+-0.6021 SET </s> -0.3010
+-0.6021 SET TIMER 0.0000
+-0.3010 SHUT UP 0.0000
+-0.3010 SURF </s> -0.3010
+-0.3010 TEMPERATURE </s> -0.3010
+-0.3010 TIME </s> -0.3010
+-0.3010 TIMER </s> -0.3010
+-0.3010 UP </s> -0.3010
+-0.3010 WEATHER </s> -0.3010
+-0.3010 WHAT </s> -0.3010
+-0.3010 WHICH </s> -0.3010
+-0.3010 WITH </s> -0.3010
+-0.3010 WORK </s> -0.3010
+
+\3-grams:
+-0.3010 <s> AGAIN </s>
+-0.6021 <s> BE </s>
+-0.6021 <s> BE QUIET
+-0.3010 <s> BEING </s>
+-0.3010 <s> BUT </s>
+-0.3010 <s> DID </s>
+-0.3010 <s> ENERGY </s>
+-0.3010 <s> ERICA </s>
+-0.3010 <s> FIRST </s>
+-0.3010 <s> HACKER </s>
+-0.3010 <s> HELLO </s>
+-0.3010 <s> HI </s>
+-0.3010 <s> IN </s>
+-0.3010 <s> IS </s>
+-0.3010 <s> IT </s>
+-0.3010 <s> JASPER </s>
+-0.3010 <s> MUSIC </s>
+-0.3010 <s> NEWS </s>
+-0.3010 <s> NOW </s>
+-0.3010 <s> OF </s>
+-0.3010 <s> OFF </s>
+-0.3010 <s> ON </s>
+-0.3010 <s> REPEAT </s>
+-0.3010 <s> RIGHT </s>
+-0.3010 <s> SAY </s>
+-0.6021 <s> SET </s>
+-0.6021 <s> SET TIMER
+-0.3010 <s> SHUT UP
+-0.3010 <s> SURF </s>
+-0.3010 <s> TEMPERATURE </s>
+-0.3010 <s> TIME </s>
+-0.3010 <s> TIMER </s>
+-0.3010 <s> WEATHER </s>
+-0.3010 <s> WHAT </s>
+-0.3010 <s> WHICH </s>
+-0.3010 <s> WITH </s>
+-0.3010 <s> WORK </s>
+-0.3010 BE QUIET </s>
+-0.3010 SET TIMER </s>
+-0.3010 SHUT UP </s>
+
+\end\

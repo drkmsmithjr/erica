@@ -1,0 +1,162 @@
+#############################################################################
+## Copyright (c) 1996, Carnegie Mellon University, Cambridge University,
+## Ronald Rosenfeld and Philip Clarkson
+## Version 3, Copyright (c) 2006, Carnegie Mellon University 
+## Contributors includes Wen Xu, Ananlada Chotimongkol, 
+## David Huggins-Daines, Arthur Chan and Alan Black 
+#############################################################################
+=============================================================================
+===============  This file was produced by the CMU-Cambridge  ===============
+===============     Statistical Language Modeling Toolkit     ===============
+=============================================================================
+This is a 3-gram language model, based on a vocabulary of 34 words,
+  which begins "SURF", "LIFE", "BIRTHDAY"...
+This is an OPEN-vocabulary model (type 1)
+  (OOVs were mapped to UNK, which is treated as any other vocabulary word)
+Good-Turing discounting was applied.
+1-gram frequency of frequency : 31 
+2-gram frequency of frequency : 33 0 0 0 0 0 0 
+3-gram frequency of frequency : 33 0 0 0 0 0 0 
+1-gram discounting ratios : 0.91 
+2-gram discounting ratios : 
+3-gram discounting ratios : 
+This file is in the ARPA-standard format introduced by Doug Paul.
+
+p(wd3|wd1,wd2)= if(trigram exists)           p_3(wd1,wd2,wd3)
+                else if(bigram w1,w2 exists) bo_wt_2(w1,w2)*p(wd3|wd2)
+                else                         p(wd3|w2)
+
+p(wd2|wd1)= if(bigram exists) p_2(wd1,wd2)
+            else              bo_wt_1(wd1)*p_1(wd2)
+
+All probs and back-off weights (bo_wt) are given in log10 form.
+
+Data formats:
+
+Beginning of data mark: \data\
+ngram 1=nr            # number of 1-grams
+ngram 2=nr            # number of 2-grams
+ngram 3=nr            # number of 3-grams
+
+\1-grams:
+p_1     wd_1 bo_wt_1
+\2-grams:
+p_2     wd_1 wd_2 bo_wt_2
+\3-grams:
+p_3     wd_1 wd_2 wd_3 
+
+end of data mark: \end\
+
+\data\
+ngram 1=35
+ngram 2=33
+ngram 3=33
+
+\1-grams:
+-1.5586 <UNK>	0.0000
+-1.5586 SURF	-0.4650
+-1.5586 LIFE	-0.4650
+-1.5586 BIRTHDAY	-0.4650
+-1.5586 REPORT	-0.4650
+-1.5586 NEWS	-0.4650
+-1.5586 SET	-0.4650
+-1.5586 FOR	-0.4650
+-1.5586 NO	-0.4650
+-1.5586 NOTIFICATION	-0.4650
+-1.5586 WEATHER	-0.4650
+-1.5586 AGAIN	-0.4650
+-1.5586 REPEAT	-0.4650
+-1.5586 THIRD	-0.4650
+-1.5586 TIME	-0.4650
+-1.5586 SPOT	-0.4650
+-1.5586 TIMER	-0.4650
+-1.5586 SECOND	-0.4650
+-1.5586 FACEBOOK	-0.4650
+-1.5586 MINUTES	-0.4650
+-1.5586 TOMORROW	-0.4650
+-1.5586 TODAY	-0.4650
+-1.5586 FIRST	-0.4650
+-1.5586 HACKER	-0.4650
+-1.5586 JOKE	-0.4650
+-1.5586 MEANING	-0.4500
+-1.2175 KNOCK	-0.6589
+-1.5586 HEALTH	-0.4650
+-1.5586 FOURTH	-0.4650
+-1.5586 OF	-0.4650
+-1.5586 YES	-0.4650
+-1.5586 MUSIC	-0.4650
+-1.5586 SPOTIFY	-0.4650
+-1.5586 <s>	0.0000
+-1.5586 </s>	0.0000
+
+\2-grams:
+-0.1761 SURF LIFE 0.1761
+-0.1761 LIFE BIRTHDAY 0.1761
+-0.1761 BIRTHDAY REPORT 0.1761
+-0.1761 REPORT NEWS 0.1761
+-0.1761 NEWS SET 0.1761
+-0.1761 SET FOR 0.1761
+-0.1761 FOR NO 0.1761
+-0.1761 NO NOTIFICATION 0.1761
+-0.1761 NOTIFICATION WEATHER 0.1761
+-0.1761 WEATHER AGAIN 0.1761
+-0.1761 AGAIN REPEAT 0.1761
+-0.1761 REPEAT THIRD 0.1761
+-0.1761 THIRD TIME 0.1761
+-0.1761 TIME SPOT 0.1761
+-0.1761 SPOT TIMER 0.1761
+-0.1761 TIMER SECOND 0.1761
+-0.1761 SECOND FACEBOOK 0.1761
+-0.1761 FACEBOOK MINUTES 0.1761
+-0.1761 MINUTES TOMORROW 0.1761
+-0.1761 TOMORROW TODAY 0.1761
+-0.1761 TODAY FIRST 0.1761
+-0.1761 FIRST HACKER 0.1761
+-0.1761 HACKER JOKE 0.1761
+-0.1761 JOKE MEANING 0.1761
+-0.1761 MEANING KNOCK -0.0792
+-0.3979 KNOCK KNOCK -0.0792
+-0.3979 KNOCK HEALTH 0.1761
+-0.1761 HEALTH FOURTH 0.1761
+-0.1761 FOURTH OF 0.1761
+-0.1761 OF YES 0.1761
+-0.1761 YES MUSIC 0.1761
+-0.1761 MUSIC SPOTIFY 0.1761
+-0.1761 SPOTIFY <s> -0.2889
+
+\3-grams:
+-0.3010 SURF LIFE BIRTHDAY 
+-0.3010 LIFE BIRTHDAY REPORT 
+-0.3010 BIRTHDAY REPORT NEWS 
+-0.3010 REPORT NEWS SET 
+-0.3010 NEWS SET FOR 
+-0.3010 SET FOR NO 
+-0.3010 FOR NO NOTIFICATION 
+-0.3010 NO NOTIFICATION WEATHER 
+-0.3010 NOTIFICATION WEATHER AGAIN 
+-0.3010 WEATHER AGAIN REPEAT 
+-0.3010 AGAIN REPEAT THIRD 
+-0.3010 REPEAT THIRD TIME 
+-0.3010 THIRD TIME SPOT 
+-0.3010 TIME SPOT TIMER 
+-0.3010 SPOT TIMER SECOND 
+-0.3010 TIMER SECOND FACEBOOK 
+-0.3010 SECOND FACEBOOK MINUTES 
+-0.3010 FACEBOOK MINUTES TOMORROW 
+-0.3010 MINUTES TOMORROW TODAY 
+-0.3010 TOMORROW TODAY FIRST 
+-0.3010 TODAY FIRST HACKER 
+-0.3010 FIRST HACKER JOKE 
+-0.3010 HACKER JOKE MEANING 
+-0.3010 JOKE MEANING KNOCK 
+-0.3010 MEANING KNOCK KNOCK 
+-0.3010 KNOCK KNOCK HEALTH 
+-0.3010 KNOCK HEALTH FOURTH 
+-0.3010 HEALTH FOURTH OF 
+-0.3010 FOURTH OF YES 
+-0.3010 OF YES MUSIC 
+-0.3010 YES MUSIC SPOTIFY 
+-0.3010 MUSIC SPOTIFY <s> 
+-0.3010 SPOTIFY <s> </s> 
+
+\end\
