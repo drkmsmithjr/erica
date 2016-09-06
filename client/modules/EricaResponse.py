@@ -2,6 +2,9 @@ import re
 import sys
 import random
 
+PRIORITY = 6
+
+WORDS = ["HELLO", "QUIET", "SHUT"]
 
 def handle(text, mic, profile):
 #def handle(text):

@@ -1,6 +1,7 @@
 import Queue
 from modules import Gmail
-from apscheduler.scheduler import Scheduler
+#from apscheduler.scheduler import Scheduler
+from apscheduler.schedulers.background import BackgroundScheduler
 import logging
 logging.basicConfig()
 from random import randint
@@ -34,14 +35,16 @@ class Notifier(object):
 	print("++++++++++++++++++++++++++++++")
 	
         #slow scheduler for non essential events
-        sched = Scheduler()
+        #sched = Scheduler()
+        sched = BackgroundScheduler()
         sched.start()
-        sched.add_interval_job(self.gather, seconds=30)
+        sched.add_job(self.gather,'interval', seconds=30)
 
         #fast scheduler for time critical notifications like timers
-        sched2 = Scheduler()
+        #sched2 = Scheduler()
+        sched2 = BackgroundScheduler()
 	sched2.start()
-	sched.add_interval_job(self.gatherTimeCrit ,seconds=1)
+	sched.add_job(self.gatherTimeCrit, 'interval' ,seconds=1)
 
 
     def gatherTimeCrit(self):

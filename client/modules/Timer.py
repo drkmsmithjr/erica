@@ -1,7 +1,8 @@
 import feedparser
 import app_utils
 import re
-from apscheduler.scheduler import Scheduler
+#from apscheduler.scheduler import Scheduler
+from apscheduler.schedulers.background import BackgroundScheduler
 import sys
 import string
 
@@ -9,7 +10,8 @@ import string
 WORDS = ["TIMER", "SET", "FOR", "MINUTES"]
 
 # set up the the timer 
-sched = Scheduler()
+#sched = Scheduler()
+sched = BackgroundScheduler()
 sched.start()
 
 
@@ -92,7 +94,8 @@ def handle(text, mic, profile, notifier):
  	        Minutes = int(Duration[TimerUnit.index('MINUTES')])
              if 'SECONDS' in TimerUnit:
  	        Seconds = int(Duration[TimerUnit.index('SECONDS')])
-             sched.add_interval_job(settimer_job, days = Days, hours=Hours, minutes=Minutes, seconds=Seconds, args=[TimerName,notifier], max_runs = 1 ) 
+             #sched.add_interval_job(settimer_job, days = Days, hours=Hours, minutes=Minutes, seconds=Seconds, args=[TimerName,notifier], max_runs = 1 )
+             sched.add_job(settimer_job,'interval', days = Days, hours=Hours, minutes=Minutes, seconds=Seconds, args=[TimerName,notifier] ) 
 
          else:
 	     mic.say("I'm sorry, I did not catch that.   Please repeat again specifing the timer in seconds, minutes, hours, days")
