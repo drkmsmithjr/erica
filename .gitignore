@@ -14,3 +14,6 @@ client/profile.yml
 build/*
 server/dump.rdb
 other/*
+client/mic.py.old
+client/mic.py.save
+client/googleaccount.py
